@@ -53,3 +53,29 @@
                 line-height: 1.5;
                 text-align: center; }
 
+table, th, td {
+
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th{
+ background: gray;
+    color: white
+}
+table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header {
+    padding: 40px;
+  text-align: center;
+  background: #111;
+  color: white;
+  font-size: 15px;
+}
+/* W3School was a website used to reference code.
+
+
+
