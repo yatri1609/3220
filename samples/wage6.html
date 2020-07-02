@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--	Author: Mike O'Kane
+		Date:	August 15, 2007
+		File:	wage6.html
+		Purpose:Provides an HTML form that to be processed by wage6.php
+		Input: 	hourlyWage, hoursWorked, userPassword
+		Output: submits hourlyWage, hoursWorked, userPassword to wage6.php
+-->
+
+
+<html>
+<head>
+	<title>Wage Report</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+
+	<h1>Wage Report</h1>
+
+	<p>
+	<form action = "wage6.php" method = "post" >
+
+		<p>Please enter your hourly wage:
+			<input type = "text" size = "20" name = "hourlyWage">
+		</p>
+		<p>And the hours you have worked:
+			<input type = "text" size = "20" name = "hoursWorked">
+		</p>
+		<p>Please enter your password:
+			<input type = "password" size = "20" name = "userPassword">
+		</p>
+
+		<input type = "submit" value = "Get Your Wage Report Now">
+		<input type = "reset" value = "Clear and start again">
+	</form>
+	</p>
+
+</body>
+</html>

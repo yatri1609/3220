@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--	Author: Mike O'Kane
+		Date:	August 15, 2007
+		File:	welcome.html
+		Purpose:HTML Practice
+-->
+
+
+<html>
+
+<head>
+	<title>Welcome!</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+
+	<h1>Welcome!</h1>
+
+	<form action = "welcome.php" method = "post" >
+
+	<table>
+	<tr><td>What is your first name?</td>
+		<td><input type = "text" size = "20" name = "firstName"></td>
+	</tr>
+	<tr><td>What is your last name?</td>
+		<td><input type = "text" size = "20" name = "lastName"></td>
+	</tr>
+	<tr><td>Tell me something that you are interested in:</td>
+		<td><input type = "text" size = "20" name = "interest1"></td>
+	</tr>
+	<tr><td>Tell me something else that you are interested in:</td>
+		<td><input type = "text" size = "20" name = "interest2"></td>
+	</tr>
+	<tr><td><p>Tell me one more thing that you are interested in:</td>
+		<td><input type = "text" size = "20" name = "interest3"></td>
+	</tr>
+	<tr><td>Please select your birth month:
+		<select name = "birthMonth" >
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+		<option>6</option>
+		<option>7</option>
+		<option>8</option>
+		<option>9</option>
+		<option>10</option>
+		<option>11</option>
+		<option>12</option>
+		</select></td>
+		<td>And birth day:
+		<select name = "birthDay" >
+		<option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+		<option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+		<option>11</option><option>12</option><option>13</option><option>14</option><option>15</option>
+		<option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
+		<option>21</option><option>22</option><option>23</option><option>24</option><option>25</option>
+		<option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
+		<option>31</option>
+		</select></td>
+	</tr>
+
+	<tr><td colspan = "2" align = "center"><input type = "submit" value = "Submit the Form">
+		<input type = "reset"  value = "Clear the Form"></td>
+	</tr>
+	</table>
+	</form>
+</body>
+</html>

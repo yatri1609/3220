@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--		Author: Mike O'Kane
+		Date:	August 15, 2007
+		File:	quiz1.html
+		Purpose:Provides an HTML form that to be processed by quiz1.php
+		Input: 	userAnswer
+		Output: submits userAnswer to quiz1.php
+-->
+
+<html>
+<head>
+	<title>PHP QUIZ</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+	<h1>PHP QUIZ</h1>
+	<form action = "quiz1.php" method = "post" >
+		<p>What symbol is used to test whether two values are equal in PHP?
+		<select name = "userAnswer">
+		<option>=</option>
+		<option>==</option>
+		<option>!=</option>
+		</select>
+		</p>
+		<p><input type = "submit" value = "Submit your answer"></p>
+	</form>
+</body>
+</html>

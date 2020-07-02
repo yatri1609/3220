@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--	Author:
+		Date:
+		File:	softWare-order.html
+		Purpose:
+-->
+
+<html>
+<head>
+	<title>SaveTheWorld Software</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+
+<body>
+<h1>SaveTheWorld: Order Form</h1>
+<p>To order <strong>SaveTheWorld</strong>, please complete the following order form: </p>
+
+<p>
+	<form action = "software-order.php" method = "post" >
+
+		<table>
+		<tr>
+			<td>Choose your operating system:</td>
+			<td><select name = "os">
+				<option>Linux</option>
+				<option>Macintosh</option>
+				<option>Windows</option>
+				</select></td>
+		</tr>
+		<tr>
+			<td>Number of copies:</td>
+			<td><input type = "text" size = "5" name = "numCopies"></td>
+		</tr>
+		</table>
+		<p>
+		<input type = "submit" value = "Submit Your Order">
+		</p>
+	</form>
+</body>
+</html>

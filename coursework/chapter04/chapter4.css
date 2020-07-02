@@ -1,0 +1,10 @@
+body 	{ background: white }
+
+h1   	{ font-family: Arial, Helvetica, Sans-serif; font-size:18pt;
+	  color:red; font-weight:bold; }
+       
+p	{ font-family: Arial, Helvetica, Sans-serif; font-size:10pt;
+	  color:black; }
+
+input	{ font-family: Arial, Helvetica, Sans-serif; font-size:10pt;
+	  color:black; }

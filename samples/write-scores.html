@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--	Author: Mike O'Kane
+		Date:	August 15, 2007
+		File:	write-scores.html
+		Purpose:HTML Practice
+-->
+
+
+<html>
+<head>
+	<title>Save Your Scores</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+
+	<h1>Save Your Scores</h1>
+
+	<p>
+	<form action = "write-scores.php" method = "post" >
+
+		<table border = "1">
+		<tr><td>Score #1: </td><td><input type = "text" size = "5" name = "score1"></td></tr>
+		<tr><td>Score #2: </td><td><input type = "text" size = "5" name = "score2"></td></tr>
+		<tr><td>Score #3: </td><td><input type = "text" size = "5" name = "score3"></td></tr>
+		<tr><td>Score #4: </td><td><input type = "text" size = "5" name = "score4"></td></tr>
+		<tr><td>Score #5: </td><td><input type = "text" size = "5" name = "score5"></td></tr>
+		</table>
+
+		<p>Enter the name of the file to store the scores. (WARNING:if this file already exists,
+		the data in the file will be lost). Include the file extension, for example my-scores.txt.
+		</p>
+		<p>File name: <input type = "text" size = "20" name = "fileName">
+		</p>
+		<p>
+		<input type = "submit" value = "Save the Scores">
+		<input type = "reset" value = "Clear and Start Again">
+		</p>
+	</form>
+	</p>
+
+</body>
+</html>

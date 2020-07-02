@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--	Author: Mike O'Kane
+		Date:	August 15, 2007
+		File:	compare-pets.html
+		Purpose:HTML Practice
+-->
+
+<html>
+<head>
+	<title>Favorite Pets</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+
+	<h1>Favorite Pets</h1>
+
+	<form action = "compare-pets.php" method = "post" >
+
+		<p>How do you rate dogs as pets (5 is highest rating, 0 is lowest)?
+		<select name = "dogRating">
+		<option>5</option>
+		<option>4</option>
+		<option>3</option>
+		<option>2</option>
+		<option>1</option>
+		<option>0</option>
+		</select>
+		</p>
+
+		<p>How do you rate cats as pets (5 is highest rating, 0 is lowest)?
+		<select name = "catRating">
+		<option>5</option>
+		<option>4</option>
+		<option>3</option>
+		<option>2</option>
+		<option>1</option>
+		<option>0</option>
+		</select>
+		</p>
+
+		<p>
+		<input type = "submit" value = "How did I do?">
+		<input type = "reset"  value = "Start over">
+		</p>
+
+	</form>
+</body>
+</html>

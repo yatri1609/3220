@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--	Author:
+		Date:
+		File:	city-trip.html
+		Purpose: Chapter 11 Exercise
+		-->
+
+<html>
+<head>
+	<title>City Trip</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+
+<body>
+	<h1>Fuel Costs from NYC</h1>
+	<p><form action = "city-trip.php" method = "post">
+	<table>
+	<tr><td>Average MPG:</td><td><input type = "text" size = "20" name = "mpg"></td></tr>
+	<tr><td>Average Cost of a Gallon of Fuel:</td><td><input type = "text" size = "20" name = "costPerGallon"></td></tr>
+	<tr><td>Which city are you visiting?</td>
+	<td><select name = "city">
+		<option>Atlanta</option>
+		<option>Boston</option>
+		<option>Chicago</option>
+		<option>Detroit</option>
+		<option>Miami</option>
+	</select></td></tr>
+	</table>
+	<input type = "submit" value = "Tell me my Fuel Costs">
+	</form></p>
+
+</body>
+</html>

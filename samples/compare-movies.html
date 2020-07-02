@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--	Author: Mike O'Kane
+		Date:	August 15, 2007
+		File:	compare-movies.html
+		Purpose:HTML Practice
+-->
+
+<html>
+<head>
+	<title>Movie Ratings</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css">
+</head>
+<body>
+
+	<h1>Movie Ratings</h1>
+
+	<form action = "compare-movies.php" method = "post" >
+
+		<p>How do you rate the Star Wars Movies (5 is highest rating, 0 is lowest)?
+		<select name = "SWrating">
+		<option>5</option>
+		<option>4</option>
+		<option>3</option>
+		<option>2</option>
+		<option>1</option>
+		<option>0</option>
+		</select>
+		</p>
+
+		<p>How do you rate the Lord of the Rings Movies (5 is highest rating, 0 is lowest)?
+		<select name = "LRrating">
+		<option>5</option>
+		<option>4</option>
+		<option>3</option>
+		<option>2</option>
+		<option>1</option>
+		<option>0</option>
+		</select>
+		</p>
+
+		<p>
+		<input type = "submit" value = "How did I do?">
+		<input type = "reset"  value = "Start over">
+		</p>
+
+	</form>
+</body>
+</html>
