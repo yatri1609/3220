@@ -1,0 +1,25 @@
+Fred:Burleson:134 Tama Lane..:Burleson.Fred@yahoo.com
+Russell:Gruber:204 Hanoi Manor..:Gruber.Russell@yahoo.com
+Claire:Gruber:123 Purnia Lane..:Gruber.Claire@hotmail.com
+Samantha:Gruber:171 Lancaster Boulevard..:Gruber.Samantha@hotmail.com
+Claire:Chisholm:15 Bisling Parkway..:Chisholm.Claire@utc.edu
+Sally:Olvera:137 Mandaluyong Lane..:Olvera.Sally@utc.edu
+Leslie:Grey:277 Botshebelo Drive..:Grey.Leslie@chattstate.edu
+Amanada:Gruber:216 Korolev Parkway..:Gruber.Amanada@exchange.com
+Fred:Grey:282 Imus Avenue..:Grey.Fred@exchange.com
+Samantha:Hannon:53 FukuyamaCam Ranh Way..:Hannon.Samantha@exchange.com
+Sally:Cromwell:228 IdfuSantiago Manor..:Cromwell.Sally@exchange.com
+Craig:Grey:238 Workhaven Avenue..:Grey.Craig@chattstate.edu
+Patricia:Lumpkin:76 Mandaluyong Boulevard..:Lumpkin.Patricia@exchange.com
+Fred:Shoemaker:105 Mandaluyong Avenue..:Shoemaker.Fred@utc.edu
+Raymond:Eggleston:174 AuroraAnapolis Lane..:Eggleston.Raymond@utc.edu
+Roger:Pitt:98 FukuyamaCam Ranh Street..:Pitt.Roger@hotmail.com
+Leslie:Shoemaker:169 Munger Manor..:Shoemaker.Leslie@chattstate.edu
+Samantha:Hannon:60 Munger Street..:Hannon.Samantha@yahoo.com
+David:Smith:4 Okara Street..:Smith.David@gmail.com
+Craig:Lombardi:271 Workhaven Parkway..:Lombardi.Craig@yahoo.com
+James:Smith:66 Mandaluyong Street..:Smith.James@yahoo.com
+Roger:Cromwell:65 Purnia Lane..:Cromwell.Roger@exchange.com
+James:Lombardi:274 AuroraAnapolis Circle..:Lombardi.James@gmail.com
+David:Chisholm:209 IliganToulan Drive..:Chisholm.David@google.com
+Robert:Banda:292 Mandaluyong Boulevard..:Banda.Robert@yahoo.com
