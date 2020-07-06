@@ -71,11 +71,6 @@
                         </tr>
                 
                         <?php 
-                        error_reporting(E_ERROR | E_WARNING | E_PARSE);
-                        // errors are annoying and tacky. Line 98 was used from Post Affiliate Pro
-                        // https://support.qualityunit.com/471229-How-to-turn-off-PHP-notices#:~:text=To%20turn%20this%20off%2C%20you,(E_ERROR%20%7C%20E_WARNING%20%7C%20E_PARSE)%3B
-                        $fileArray = array();
-                        
                                 for($i = 0; $i < 25; $i++)
                                 {
 
