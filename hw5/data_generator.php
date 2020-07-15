@@ -55,7 +55,7 @@
                 $order_column = array("order_id", "customer_id", "address_id");
                 $product_column = array("product_id","product_name", "description", "weight", "base_cost");
                 $order_item_column = array("order_id", "product_id", "quantity", "price");
-                $address_column = array("address_id", "street", "city", "state", "zip");
+                $address_column = array("address_id", "street", "city", "states", "zip");
                 $warehouse_column = array("warehouse_id", "name", "address_id");
                 $product_warehouse_column = array("product_id", "warehouse_id");
                 const cust_row = 100;
@@ -78,10 +78,75 @@
                 $product = get_array_data("products.txt");
                 $states = get_array_data("states.txt");
                 $domain = get_array_data("domains.txt");
-                $address = rand(0,300)." ".$street_name." ".$street_type.",".$city.",".$states; 
-                $email = $lastNames . $firstNames . $domain;
+                $warehouse_name = get_array_data("warehouse.txt");
+                $product_desc = get_array_data("product_desc.txt");
+                $digits = 5;
+                $phone_digit =10;
 
+                for($i = 0; $i < address_row; $i++) {
+                        $add[$i][0] = $i; 
+                        $add[$i][1] = "'".$street_name[rand(0, sizeof($street_name)-1)].$street_type[rand(0, sizeof($street_type)-1)]."'"; 
+                        $add[$i][2] = "'".$city[rand(0, sizeof($city)-1)]."'";
+                        $add[$i][3] = "'".$states[rand(0, sizeof($states)-1)]."'";
+                        $add[$i][4] = "'".(rand(pow(10, $digits-1), pow(10, $digits)-1))."'";
+                }
+
+                for($i = 0; $i < cust_row; $i++) {
+                        $cust[$i][0] = $i; 
+                        $fname = $firstNames[rand(0, sizeof($firstNames)-1)];
+                        $lname = $lastNames[rand(0, sizeof($lastNames)-1)];
+                        $cust[$i][1] = "'".$fname."'"; 
+                        $cust[$i][2] = "'".$lname."'";
+                        $cust[$i][3] = "'".$lname.'.'.$fname.$domain[rand(0, sizeof($domain)-1)]."'";
+                        $cust[$i][4] = "'".rand(pow(10, $phone_digit-1), pow(10, $phone_digit)-1)."'";
+                        $cust[$i][5] = "'".rand(0, address_row)."'";
+                }
+
+                for($i = 0; $i < order_row; $i++) {
+                        $ord[$i][0] = $i; 
+                        $ord[$i][1] = "'".rand(0, cust_row)."'";
+                        $ord[$i][2] = "'".rand(0, address_row)."'";
+                }
+
+                for($i = 0; $i < product_row; $i++) {
+                        $pro[$i][0] = $i; 
+                        $pro[$i][1] = "'".$product[rand(0, sizeof($product)-1)]."'";
+                        $pro[$i][2] = "'".$product_desc."'";
+                        $pro[$i][3] = "'".rand(0,100)."'";
+                        $pro[$i][4] = "'".'$'.rand(1,100)."'";
+                }
+
+                for($i = 0; $i < warehouse_row; $i++) {
+                        $ware[$i][0] = $i; 
+                        $ware[$i][1] = "'".$warehouse_name[rand(0, sizeof($warehouse_name)-1)]."'";
+                        $ware[$i][2] = "'".rand(0, address_row)."'";
+                }
+
+                for($i = 0; $i < order_item_row; $i++) {
+                        $oitem[$i][0] = "'".rand(0, order_row)."'"; 
+                        $oitem[$i][1] = "'".rand(0, product_row )."'";
+                        $oitem[$i][2] = "'".rand(0,50)."'";
+                        $oitem[$i][3] = "'".rand(10,1000)."'";
+                }
+
+                for($i = 0; $i < product_warehouse; $i++) {
+                        $pware[$i][0] = "'".rand(0, product_row )."'"; 
+                        $pware[$i][1] = "'".rand(0, warehouse_row)."'";
+                }
+
+                $handle = fopen("data.sql", "a");
+                //write the data
+                write_table($handle, "SuperStore", "address", $address_column, $add);
+                write_table($handle, "SuperStore", "customer", $customer_columns, $cust);
+                write_table($handle, "SuperStore", "order", $order_column, $ord);
+                write_table($handle, "SuperStore", "product", $product_column, $pro);
+                write_table($handle, "SuperStore", "warehouse", $warehouse_column, $ware);
+                write_table($handle, "SuperStore", "order_item", $order_item_column, $oitem);
+                write_table($handle, "SuperStore", "product_warehouse", $product_warehouse_column, $pware);
+
+                fclose($handle);
                 
+                print("<h1>SQL script complete!</h1>");
         ?>
 </body>
 </html>
