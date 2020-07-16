@@ -1,24 +1,24 @@
 CREATE DATABASE SuperStore;
 
 CREATE TABLE SuperStore.customer (
-    customer_id int(11),
+    customer_id int(11) AUTO_INCREMENT,
     first_name varchar(255),
     last_name varchar(255),
     email varchar(320),
-    phone int(11),
+    phone varchar(11),
     address_id int(11),
     PRIMARY KEY (customer_id)
 );
 
 CREATE TABLE SuperStore.`order` (
-    order_id int(11),
+    order_id int(11) AUTO_INCREMENT,
    customer_id int(11),
    address_id int(11),
    PRIMARY KEY (order_id)
 );
 
 CREATE TABLE SuperStore.product (
-    product_id int(11),
+    product_id int(11) AUTO_INCREMENT,
     product_name varchar(255),
     description varchar(255),
     weight int,
@@ -29,15 +29,15 @@ CREATE TABLE SuperStore.product (
 CREATE TABLE SuperStore.order_item (
      order_id int(11),
      product_id int(11),
-quantity int(11) ,
+    quantity int(11) ,
    	price decimal(13,2)
 );
 
 CREATE TABLE SuperStore.address (
-    address_id int(11),
+    address_id int(11) AUTO_INCREMENT,
     street varchar(255),
     city varchar(255),
-    state varchar(255),
+    states varchar(255),
     zip varchar(5),
     PRIMARY KEY (address_id)
 );
@@ -45,7 +45,7 @@ CREATE TABLE SuperStore.address (
 
 
 CREATE TABLE SuperStore.warehouse (
-    warehouse_id int,
+    warehouse_id int(11) AUTO_INCREMENT,
     name varchar(255),
     address_id int(11),
     PRIMARY KEY (warehouse_id) 
@@ -79,9 +79,3 @@ ADD FOREIGN KEY (address_id) REFERENCES address(address_id);
 
 ALTER TABLE SuperStore.customer
 ADD FOREIGN KEY (address_id) REFERENCES address(address_id);
-
-
-
-
-
-
