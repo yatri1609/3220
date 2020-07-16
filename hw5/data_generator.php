@@ -111,7 +111,7 @@
                 for($i = 0; $i < product_row; $i++) {
                         $pro[$i][0] = $i; 
                         $pro[$i][1] = "'".$product[rand(0, sizeof($product)-1)]."'";
-                        $pro[$i][2] = "'".$product_desc."'";
+                        $pro[$i][2] = "'".$product_desc[rand(0, sizeof($product_desc)-1)]."'";
                         $pro[$i][3] = "'".rand(0,100)."'";
                         $pro[$i][4] = "'".'$'.rand(1,100)."'";
                 }
