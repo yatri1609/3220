@@ -17,10 +17,6 @@
 		$max   = $_POST['max'];
  /* below is initilizing the 2d array. */
     $d = array( array());
-    
-  
-
-	
 
 		print ("Your array size is: $rows x $columns <br>");
 		print ("Your min value is: $min <br>");

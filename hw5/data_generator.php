@@ -24,7 +24,6 @@
                         fwrite($handle, "use $database;\n\n");
                         fwrite($handle, "SET AUTOCOMMIT=0;\n\n");
                         //from DBeaver
-                        //INSERT INTO moviestore4.actor (first_name,last_name) VALUES ('Fred','Schwab');
                         fwrite($handle, "INSERT INTO $database.$table (");
                         for($i = 0; $i < sizeof($columns); $i++) {
                             fwrite($handle, $columns[$i]);
@@ -85,7 +84,7 @@
 
 
                 for($i = 0; $i < address_row; $i++) {
-                        $add[$i][0] = "'".$street_name[rand(0, sizeof($street_name)-1)].$street_type[rand(0, sizeof($street_type)-1)]."'"; 
+                        $add[$i][0] = "'".$street_name[rand(0, sizeof($street_name)-1)]." ".$street_type[rand(0, sizeof($street_type)-1)]."'"; 
                         $add[$i][1] = "'".$city[rand(0, sizeof($city)-1)]."'";
                         $add[$i][2] = "'".$states[rand(0, sizeof($states)-1)]."'";
                         $add[$i][3] = "'".(rand(pow(10, $digits-1), pow(10, $digits)-1))."'";
@@ -102,7 +101,6 @@
                 }
 
                 for($i = 0; $i < order_row; $i++) {
-                        // $ord[$i][0] = "'".rand(1, cust_row)."'";
                         $ord[$i][0] = "'".rand(1, address_row)."'";
                         $ord[$i][1] = "'".rand(1, cust_row)."'";
                 }
