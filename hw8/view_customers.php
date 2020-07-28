@@ -22,6 +22,7 @@ $results = mysqli_query($db, $query);
   <input type=button onClick="parent.location='manager.html'" value='Go to Manager page'>
 </head>
 <body>
+<link rel="stylesheet" href="style.css" type="text/css">
 <table>
     <tr>
     <th>First Name</th>
@@ -47,13 +48,7 @@ $results = mysqli_query($db, $query);
         echo "<td>".$rows['district']."</td>";
         echo "<td>".$rows['postal_code']."</td>";
         echo "<td>".$rows["GROUP_CONCAT(DISTINCT film.title SEPARATOR ', ')"]."</td>";
-        $films = array("fistName" => $rows['first_name'],
-                       "lastName" => $rows['last_name'],
-                       "theAddress" => $rows['address'],
-                       "theCity" => $rows['city'],
-                       "district" => $rows['district'],
-                       "postalCode" => $rows['postal_code'],
-                       );
+        
         
        
         echo "</tr>";
